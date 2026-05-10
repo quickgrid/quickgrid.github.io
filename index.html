@@ -34,7 +34,7 @@
     html { scroll-behavior: smooth; }
     body {
       font-family: var(--sans); background: var(--bg-2); color: var(--text);
-      line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden;
+      line-height: 1.0; -webkit-font-smoothing: antialiased; overflow-x: hidden;
     }
     body::before {
       content: ""; position: fixed; inset: 0; z-index: -2;
@@ -43,16 +43,6 @@
         radial-gradient(900px 600px at -10% 20%, rgba(125,211,252,0.12), transparent 55%),
         radial-gradient(800px 500px at 50% 120%, rgba(167,139,250,0.1), transparent 50%),
         var(--bg);
-    }
-	.grid-bg {
-      position: fixed;
-      inset: 0;
-      background-image: 
-        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-      background-size: 32px 32px;
-      mask: radial-gradient(ellipse at center, black 40%, transparent 70%);
-      z-index: -2;
     }
     body::after {
       content: ""; position: fixed; inset: 0; z-index: -1; opacity: 0.04;
@@ -282,7 +272,6 @@
 <body>
   <div id="progress"></div>
   <div class="cursor-glow" id="glow"></div>
-  <div class="grid-bg"></div>
   <div class="app">
     <!-- LEFT -->
     <aside class="left">
@@ -303,8 +292,8 @@
         <a href="https://www.linkedin.com/in/quickgrid" target="_blank" rel="noopener noreferrer" class="btn primary">
 		  LinkedIn
         </a>
-        <a href="https://github.com/quickgrid" target="_blank" rel="noopener noreferrer" class="btn">
-          GitHub
+        <a href="https://huggingface.co/quickgrid" target="_blank" rel="noopener noreferrer" class="btn">
+          Huggingface
         </a>
 		<a href="https://www.youtube.com/@compactai" target="_blank" rel="noopener noreferrer" class="btn">
 		  YouTube
@@ -327,7 +316,7 @@
         </div>
         <div class="research-grid">
           <div class="research-item"><b>Multimodal & VLM</b><span>Vision-language pretraining, cross-modal retrieval, visual reasoning, grounding</span></div>
-          <div class="research-item"><b>3D Vision & NeRF</b><span>Depth estimation, neural reconstruction, Gaussian splatting, spatial understanding</span></div>
+          <div class="research-item"><b>3D Vision & 3DGS</b><span>Depth estimation, neural reconstruction, Gaussian splatting, spatial understanding</span></div>
           <div class="research-item"><b>Generative AI</b><span>Diffusion models, controllable generation, latent manipulation, inversion</span></div>
           <div class="research-item"><b>Efficient Learning</b><span>Quantization, distillation, pruning, LoRA, continual learning</span></div>
           <div class="research-item"><b>Explainable AI</b><span>Attention analysis, feature visualization, concept discovery, probing</span></div>
@@ -400,7 +389,7 @@
         <div class="skills-grid">
           <div class="card skill">
             <h4>Computer Vision</h4>
-            <p><strong>Detection, Tracking, Segmentation, Pose, Depth, OCR/ALPR, Video Analytics, NeRF</strong></p>
+            <p><strong>Detection, Tracking, Segmentation, Pose, Depth, OCR/ALPR, Video Analytics, 3DGS</strong></p>
           </div>
           <div class="card skill">
             <h4>AI / ML</h4>
@@ -436,6 +425,7 @@
           <a href="https://quickgrid.wordpress.com/" target="_blank" rel="noopener noreferrer" class="btn">WordPress</a>
           <a href="https://quickgrid.blogspot.com" target="_blank" rel="noopener noreferrer" class="btn">Blogspot</a>
 		  <a href="https://www.patreon.com/c/CompactAI" target="_blank" rel="noopener noreferrer" class="btn">Patreon</a>
+		  <a href="https://github.com/quickgrid" target="_blank" rel="noopener noreferrer" class="btn">Github</a>
         </div>
       </section>
 
