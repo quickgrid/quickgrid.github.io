@@ -59,7 +59,7 @@ body.grid-bg::after {
 .app { display: grid; grid-template-columns: 420px 1fr; min-height: 100vh; position: relative; z-index: 1; }
 
 .left {
-  position: sticky; top: 0; height: 100vh; overflow-y: auto; overflow-x: hidden;
+  position: sticky; top: 0; height: 100vh; overflow: hidden;
   padding: 48px 36px; border-right: 1px solid var(--border);
   background: var(--surface-translucent, var(--surface));
   backdrop-filter: blur(12px) saturate(1.2);
