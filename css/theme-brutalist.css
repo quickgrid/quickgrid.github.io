@@ -1,0 +1,17 @@
+/* THEME: Neubrutalist — thick borders, hard offset shadows, punchy yellow accent */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+:root{
+  --bg:#f5f0e6; --bg-decoration:#f5f0e6;
+  --surface:#ffffff; --surface-2:#ffe14d; --surface-translucent:#f5f0e6f0;
+  --border:#111111; --text:#111111; --text-strong:#000000; --text-muted:#3a3a3a; --text-faint:#666;
+  --accent:#ff5c38; --accent-2:#ffe14d; --accent-contrast:#111111;
+  --accent-gradient: #ff5c38;
+  --radius:0px; --radius-sm:0px;
+  --font-display:'Space Grotesk',system-ui,sans-serif; --font-body:'Space Grotesk',system-ui,sans-serif; --font-mono:'Space Mono',monospace;
+  --shadow:6px 6px 0 #111111; --success:#111111; --display-weight:700; --grid-opacity:0;
+}
+.card,.proj,.research-item,.exp-item,.cert,.btn,.theme-picker{ border-radius:0 !important; border-width:2px !important; box-shadow: 4px 4px 0 var(--border) !important; }
+.card:hover,.proj:hover,.btn:hover{ transform: translate(-2px,-2px) !important; box-shadow: 6px 6px 0 var(--border) !important; }
+.btn.primary{ color:#111 !important; }
+.tag{ border-width:2px !important; }
+.sec-title::before{ width:5px; }
